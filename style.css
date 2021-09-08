@@ -1,0 +1,27 @@
+*{
+      margin: 0;
+      padding: 0;
+} 
+
+body{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.loader{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 20px solid rgb(209, 209, 209); 
+      border-top: 20px solid dodgerblue;
+      animation: load 3s ease infinite;
+}
+@keyframes load{
+      from{
+            transform: rotate(0deg);
+      }
+      to{
+            transform: rotate(360deg);
+      }
+}
